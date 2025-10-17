@@ -2,6 +2,7 @@ export enum LinkImageSource {
   Github = "/images/logos/github.png",
   ItchIo = "/images/logos/itch.io.png",
   Steam = "/images/logos/steam.png",
+  TL = "/images/logos/TL.png",
 }
 
 export enum Platform {
@@ -9,14 +10,14 @@ export enum Platform {
   Mac = "Mac",
   Linux = "Linux",
   iOS = "iOS",
-  Android = "Android"
-  Playstation = "Playstation"
+  Android = "Android",
+  Playstation = "Playstation",
   Xbox = "Xbox",
 }
 
 export enum GameEngine {
   Unity = "Unity",
-  Unreal = "Unreal"
+  Unreal = "Unreal",
   Other = "Other",
 }
 

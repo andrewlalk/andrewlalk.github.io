@@ -10,17 +10,18 @@ export const PersonalInfo: AboutMeData = {
   links: {
     github: "https://github.com/andrewlalk",
     itchIO: "https://lalkdev.itch.io",
-  }
+  },
 };
 
 export const games: Game[] = [
 	{
     name: "Throne & Liberty - QA",
-    description: Credits Page url: "https://www.playthroneandliberty.com/en-gb/game/credits",
+    description: "THRONE AND LIBERTY captures the essence of classic MMORPGs while introducing new gameplay elements, depth and excitement at every turn. Gather your guild, prepare for battle, and set forth for throne... and liberty!",
     genres: ["MMO", "RPG" , "Open World"],
-    platforms: [Platform.Windows] , [Platform.Xbox] , [Platform.Playstation] ,
+    platforms: [Platform.Windows] [Platform.Xbox] [Platform.Playstation] ,
     links: [
       { source: LinkImageSource.Steam, url: "https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/" },
+	  {	source: LinkImageSource.TL, url: "https://www.playthroneandliberty.com/en-gb/game/credits"}
     ],
     media: [
       { source: "/images/games/Throne & Liberty/Screenshot_1.jpg", type: MediaType.Image },
