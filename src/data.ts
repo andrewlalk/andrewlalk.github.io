@@ -22,7 +22,7 @@ export const games: Game[] = [
     platforms: [Platform.Windows],
     engine: GameEngine.Unity,
     links: [
-      { source: LinkImageSource.ItchIo, url: "https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/" },
+      { source: LinkImageSource.Steam, url: "https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/" },
     ],
     media: [
       { source: "/images/games/Throne & Liberty/Screenshot_1.jpg", type: MediaType.Image },
