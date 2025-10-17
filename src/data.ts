@@ -10,7 +10,7 @@ export const PersonalInfo: AboutMeData = {
   links: {
     github: "https://github.com/andrewlalk",
     itchIO: "https://lalkdev.itch.io",
-
+	linkedIn: "null",
   }
 };
 
