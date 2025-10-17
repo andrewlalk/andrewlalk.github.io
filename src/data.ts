@@ -10,17 +10,15 @@ export const PersonalInfo: AboutMeData = {
   links: {
     github: "https://github.com/andrewlalk",
     itchIO: "https://lalkdev.itch.io",
-	linkedIn: "null",
   }
 };
 
 export const games: Game[] = [
 	{
     name: "Throne & Liberty - QA",
-    description: "https://www.playthroneandliberty.com/en-gb/game/credits",
+    description: Credits Page url: "https://www.playthroneandliberty.com/en-gb/game/credits",
     genres: ["MMO", "RPG" , "Open World"],
-    platforms: [Platform.Windows],
-    engine: GameEngine.Unity,
+    platforms: [Platform.Windows] , [Platform.Xbox] , [Platform.Playstation] ,
     links: [
       { source: LinkImageSource.Steam, url: "https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/" },
     ],

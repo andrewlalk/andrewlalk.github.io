@@ -9,12 +9,15 @@ export enum Platform {
   Mac = "Mac",
   Linux = "Linux",
   iOS = "iOS",
-  Android = "Android",
+  Android = "Android"
+  Playstation = "Playstation"
+  Xbox = "Xbox",
 }
 
 export enum GameEngine {
   Unity = "Unity",
-  Unreal = "Unreal",
+  Unreal = "Unreal"
+  Other = "Other",
 }
 
 export enum MediaType {
@@ -37,7 +40,6 @@ export interface AboutMeData {
   links: {
     github: string;
     itchIO: string;
-    linkedIn: string;
   };
 }
 
