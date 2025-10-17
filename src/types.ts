@@ -13,6 +13,7 @@ export enum Platform {
   Android = "Android",
   Playstation = "Playstation",
   Xbox = "Xbox",
+  Steam = "Steam",
 }
 
 export enum GameEngine {

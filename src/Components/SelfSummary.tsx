@@ -53,8 +53,7 @@ const SelfSummary: React.FC = () => {
         </Row>
         <Row>
           <LogoButton source="/images/logos/github.png" size={75} margin={12} linkTo={PersonalInfo.links.github} />
-          <LogoButton source="/images/logos/linkedIn.png" size={75} margin={12} linkTo={PersonalInfo.links.linkedIn} />
-          <LogoButton source="/images/logos/itch.io.png" size={75} margin={12} linkTo={PersonalInfo.links.itchIO} />
+          <LogoButton source="/images/logos/itch.io.png" size={75} margin={12} linkTo={PersonalInfo.links.itchIO} />      
         </Row>
       </TopRow>
       <Description>{PersonalInfo.introduction}</Description>
