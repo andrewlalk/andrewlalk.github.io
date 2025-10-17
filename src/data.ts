@@ -15,8 +15,26 @@ export const PersonalInfo: AboutMeData = {
 };
 
 export const games: Game[] = [
+	{
+    name: "Throne & Liberty - QA",
+    description: "https://www.playthroneandliberty.com/en-gb/game/credits",
+    genres: ["MMO", "RPG" , "Open World"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.ItchIo, url: "https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/" },
+    ],
+    media: [
+      { source: "/images/games/Throne & Liberty/Screenshot_1.jpg", type: MediaType.Image },
+      { source: "https://www.youtube.com/watch?v=KFQoXwQh7j8", type: MediaType.YouTube },
+      { source: "/images/games/Throne & Liberty/Screenshot_2.jpg", type: MediaType.Image },
+      { source: "/images/games/Throne & Liberty/Screenshot_3.jpg", type: MediaType.Image },
+      { source: "/images/games/Throne & Liberty/Screenshot_4.jpg", type: MediaType.Image },
+    ],
+  },
+
   {
-    name: "A True Captain",
+    name: "A True Captain - Dev",
     description: "A short text adventure about piracy!",
     genres: ["Follow Your Own Path", "Text Adventure" , "2D"],
     platforms: [Platform.Windows],
@@ -32,23 +50,6 @@ export const games: Game[] = [
       { source: "/images/games/A True Captain/Screenshot_3.png", type: MediaType.Image },
       { source: "/images/games/A True Captain/Screenshot_4.png", type: MediaType.Image },
     ],
-  },
-  {
-    name: "GAME_NAME",
-    description: "GAME_DESCRIPTION",
-    genres: ["GAME_GENRE", "GAME_GENRE..."],
-    platforms: [Platform.Windows],
-    engine: GameEngine.Unity,
-    links: [
-      { source: LinkImageSource.Github, url: "https://github.com/YOUR_REPO" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
-    ],
-    media: [
-      { source: "/images/games/GAME_NAME/Screenshot_1.png", type: MediaType.Image },
-      { source: "https://www.youtube.com/embed/dQw4w9WgXcQ", type: MediaType.YouTube },
-      { source: "/images/games/GAME_NAME/Screenshot_2.png", type: MediaType.Image },
-      { source: "/images/games/GAME_NAME/Screenshot_3.png", type: MediaType.Image },
-      { source: "/images/games/GAME_NAME/Screenshot_4.png", type: MediaType.Image },
-    ],
   }
+  
 ];
