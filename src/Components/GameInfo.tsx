@@ -12,7 +12,7 @@ const GameInfoContainer = styled(Column)`
 `;
 
 const GameTitle = styled.h1`
-  font-family: "ZenDots", sans-serif;
+  font-family: "DMSerifText-Regular", sans-serif;
   font-size: 2rem;
   color: #00ced1;
   margin-top: 0;

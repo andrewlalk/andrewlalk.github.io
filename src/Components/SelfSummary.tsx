@@ -12,7 +12,7 @@ const TopRow = styled(Row)`
 `
 const Title = styled.div`
   font-size: 3em;
-  font-family: "PhoenixGaming", sans-serif;
+  font-family: "RussoOne-Regular", sans-serif;
   
   @media (max-width: 768px) {
     font-size: 1.5em;
@@ -22,7 +22,7 @@ const Title = styled.div`
 const Description = styled.p`
   font-size: 2rem;
   max-width: 60vw;
-  font-family: "PixelGame", sans-serif;
+  font-family: "CarterOne-Regular", sans-serif;
   margin-left: 10px;
   color: silver;
 

@@ -1,24 +1,24 @@
 @font-face {
-  font-family: 'PhoenixGaming';
-  src: url('../assets/fonts/PhoenixGaming.ttf') format('truetype');
+  font-family: 'RussoOne-Regular';
+  src: url('../assets/fonts/RussoOne-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'PixelGame';
-  src: url('../assets/fonts/PixelGame.otf') format('truetype');
+  font-family: 'Bangers-Regular';
+  src: url('../assets/fonts/Bangers-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'ZenDots';
-  src: url('../assets/fonts/ZenDots.ttf') format('truetype');
+  font-family: 'DMSerifText-Italic';
+  src: url('../assets/fonts/DMSerifText-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Oxanium';
-  src: url('../assets/fonts/Oxanium.ttf') format('truetype');
+  font-family: 'DMSerifText-Regular';
+  src: url('../assets/fonts/DMSerifText-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,13 +27,14 @@ body {
   margin: 0;
   padding: 0;
   font-size: 30px;
-  font-family: 'Oxanium', 'Oxygen', sans-serif;
+  font-family: 'DMSerifText-Italic', 'Oxygen', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+  background-repeat: repeat-y-n;
+  background-size: contain;
   
-  background-image: url('../assets/images/Background.jpg');
-  background-repeat: repeat;
-  background-size: 500px;
   color: #ffffff;
 }
 

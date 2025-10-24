@@ -3,7 +3,7 @@ import { AboutMeData, Game, GameEngine, LinkImageSource, MediaType, Platform } f
 export const PersonalInfo: AboutMeData = {
   name: "Andrew Lalk",
   role: "Software Engineer & Quality Assurance Specialist",
-  introduction: "5+ Years of experience in game development and software quality assurance.",
+  introduction: "5+ Years of experience in game development and software QA.",
   description: "Main experience is in C#, C++, Python, Unity and Unreal Engine.",
   image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
   cvUri: `${process.env.PUBLIC_URL}/files/my_cv.pdf`,
@@ -54,7 +54,7 @@ export const games: Game[] = [
       { source: "/images/games/A True Captain/Screenshot_3.png", type: MediaType.Image },
       { source: "/images/games/A True Captain/Screenshot_4.png", type: MediaType.Image },
     ],
-  }
+  },
 
 /////// Game #3
   {
@@ -63,6 +63,8 @@ export const games: Game[] = [
     genres: ["Walking Simulator", "Pirates"],
     platforms: [Platform.Windows],
     engine: GameEngine.UnrealEngine,
+	    links: [
+      { source: LinkImageSource.Github, url: "null" },
     ],
     media: [
       { source: "/images/games/Pirate Forest/Screenshot_1.png", type: MediaType.Image },
