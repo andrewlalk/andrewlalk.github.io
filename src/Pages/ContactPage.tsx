@@ -95,7 +95,7 @@ const ContactMe: React.FC = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button onClick={handleSubmit}>Send via WhatsApp</Button>
+        <Button onClick={handleSubmit}>Send Email</Button>
       </ContactContainer>
     </CenterContainer>
   );
