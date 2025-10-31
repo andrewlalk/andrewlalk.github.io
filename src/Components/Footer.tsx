@@ -16,13 +16,7 @@ const FooterContainer = styled(Row)`
     }
 `;
 
-const MyLink = styled.a`
-    color: white !important;
-`
 
-const Icon = styled.img`
-height: 16px;
-`
 
 const Footer: React.FC = () => {
     return (
