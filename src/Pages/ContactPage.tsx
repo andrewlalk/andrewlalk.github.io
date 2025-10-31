@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import emailjs from '@emailjs/browser';
 import { Column } from '../Styles/StyledComponents';
 
 const CenterContainer = styled(Column)`
@@ -73,11 +74,34 @@ const Button = styled.button`
 const ContactMe: React.FC = () => {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = () => {
-    const formattedMessage = `Hey my name is ${name}\n${message}`;
-    const url = `https://wa.me/${process.env.REACT_APP_WA_NUMBER}?text=${encodeURIComponent(formattedMessage)}`;
-    window.open(url, '_blank');
+  const handleSubmit = async () => {
+    if (!name || !message) {
+      alert('Please fill out all fields.');
+      return;
+    }
+
+    setSending(true);
+
+    try {
+  emailjs.send(
+    process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+    process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+    { from_name: name, message },
+    process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+);
+
+
+      alert('✅ Message sent successfully!');
+      setName('');
+      setMessage('');
+    } catch (error) {
+      console.error('Email send failed:', error);
+      alert('❌ Something went wrong. Please try again.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
