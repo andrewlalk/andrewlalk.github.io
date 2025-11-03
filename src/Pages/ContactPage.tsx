@@ -73,36 +73,48 @@ const Button = styled.button`
 
 const ContactMe: React.FC = () => {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [sending, setSending] = useState(false);
 
   const handleSubmit = async () => {
-    if (!name || !message) {
-      alert('Please fill out all fields.');
-      return;
-    }
+  if (!name || !email || !message) {
+    alert('Please fill out all fields.');
+    return;
+  }
 
-    setSending(true);
+  // Basic email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
 
-    try {
-  emailjs.send(
-    process.env.REACT_APP_EMAILJS_SERVICE_ID!,
-    process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
-    { from_name: name, message },
-    process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
-);
+  setSending(true);
 
+  try {
+    await emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+      {
+        from_name: name,
+        reply_to: email,   // 👈 Send user email to EmailJS
+        message,
+      },
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+    );
 
-      alert('✅ Message sent successfully!');
-      setName('');
-      setMessage('');
-    } catch (error) {
-      console.error('Email send failed:', error);
-      alert('❌ Something went wrong. Please try again.');
-    } finally {
-      setSending(false);
-    }
-  };
+    alert('✅ Message sent successfully!');
+    setName('');
+    setEmail('');
+    setMessage('');
+  } catch (error) {
+    console.error('Email send failed:', error);
+    alert('❌ Something went wrong. Please try again.');
+  } finally {
+    setSending(false);
+  }
+};
 
   return (
     <CenterContainer>
@@ -113,6 +125,13 @@ const ContactMe: React.FC = () => {
           placeholder="Your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+        />
+        <Input
+          type="email"
+          placeholder="Your Email Address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <TextArea
           placeholder="Your Message"

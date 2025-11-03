@@ -25,7 +25,7 @@ export const games: Game[] = [
 	engine: GameEngine.Other,
     links: [
       { source: LinkImageSource.Steam, url: "https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/" },
-	  {	source: LinkImageSource.TL, url: "https://www.playthroneandliberty.com/en-gb/game/credits#:~:text=Test%20Associate%20%7C%20Andrew%20Lalk"}
+	    {	source: LinkImageSource.TL, url: "https://www.playthroneandliberty.com/en-gb/game/credits#:~:text=Test%20Associate%20%7C%20Andrew%20Lalk"}
     ],
     media: [
       { source: "/images/games/Throne & Liberty/Screenshot_1.jpg", type: MediaType.Image },
@@ -39,7 +39,7 @@ export const games: Game[] = [
 /////// Game #2
 
  {
-    name: "Pirate Forest - Dev",
+    name: "Pirate Forest - Developer",
     description: "A simple forest environment that I made in Unreal Engine 5.1, so I threw a pirate into it. Assets were pulled for free from the asset store. Environment design, music and audio FX were done by me.",
     genres: ["Walking Simulator" , "Pirates"],
     platforms: [Platform.Windows],
@@ -59,7 +59,28 @@ export const games: Game[] = [
 /////// Game #3
 
   {
-    name: "A True Captain - Dev",
+    name: "Operation: Stop Primus - Developer",
+    description: "A short text adventure about piracy! All art, music and development was done by me.",
+    genres: ["Shmup", "Bullet Hell" , "Railshooter"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/andrewlalk/Operation-Stop-Primus" },
+      { source: LinkImageSource.ItchIo, url: "https://hamwichdev.itch.io/operation-stop-primus" }
+    ],
+    media: [
+      { source: "/images/games/Operation Stop Primus/Screenshot_1.png", type: MediaType.Image },
+      { source: "https://www.youtube.com/embed/Pl6NLr1vm7k", type: MediaType.YouTube },
+      { source: "/images/games/Operation Stop Primus/Screenshot_2.png", type: MediaType.Image },
+      { source: "/images/games/Operation Stop Primus/Screenshot_3.png", type: MediaType.Image },
+      { source: "/images/games/Operation Stop Primus/Screenshot_4.png", type: MediaType.Image },
+    ],
+  },
+  
+  /////// Game #4
+
+  {
+    name: "A True Captain - Developer",
     description: "A short text adventure about piracy! All art, music and development was done by me.",
     genres: ["Follow Your Own Path", "Text Adventure" , "2D"],
     platforms: [Platform.Windows],

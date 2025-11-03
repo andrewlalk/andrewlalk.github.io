@@ -42,12 +42,12 @@ const PopupOverlay = styled.div`
 `;
 
 const PopupImage = styled.img`
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 100%;
+  max-height: 100%;
 
   @media (max-width: 768px) {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
   }
 `;
 
