@@ -60,7 +60,7 @@ export const games: Game[] = [
 
   {
     name: "Operation: Stop Primus - Developer",
-    description: "A short text adventure about piracy! All art, music and development was done by me.",
+    description: "This is some random project I made, go listen to the band Primus if you like the music, I do not own the right to their music, I just was listening to it a lot at the time I made it in 2021.",
     genres: ["Shmup", "Bullet Hell" , "Railshooter"],
     platforms: [Platform.Windows],
     engine: GameEngine.Unity,
