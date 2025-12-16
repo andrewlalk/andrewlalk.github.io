@@ -10,12 +10,33 @@ export const PersonalInfo: AboutMeData = {
   links: {
     github: "https://github.com/andrewlalk",
     itchIO: "https://hamwichdev.itch.io/",
+    YouTube: "https://www.youtube.com/@HamwichDev",
   },
 };
 
 export const games: Game[] = [
 
-/////// Game #1
+/////// Game #5
+
+	{
+    name: "Ember Shrine | Cinematic Environment - Developer/Audio Engineer",
+    description: "This is a treasure-filled crypt environment I made in Unreal Engine 5.4, this was made with assets from the Fab library and the audio was engineered by me.",
+    genres: ["Cinematic", "Dark Fantasy"],
+    platforms: [Platform.YouTube],
+	engine: GameEngine.Other,
+    links: [
+      { source: LinkImageSource.YouTube, url: "https://www.youtube.com/watch?v=mhtUulFAvLo&t=7s" },
+    ],
+    media: [
+      { source: "https://www.youtube.com/embed/mhtUulFAvLo?si=jFhcIXYlU6EXm13q", type: MediaType.YouTube },
+      { source: "/images/games/Ember Shrine/Screenshot_1.png", type: MediaType.Image },
+      { source: "/images/games/Ember Shrine/Screenshot_2.png", type: MediaType.Image },
+      { source: "/images/games/Ember Shrine/Screenshot_3.png", type: MediaType.Image },
+      { source: "/images/games/Ember Shrine/Screenshot_4.png", type: MediaType.Image },
+    ],
+  },
+
+/////// Game #4
 
 	{
     name: "Throne & Liberty - QA",
@@ -28,35 +49,35 @@ export const games: Game[] = [
 	    {	source: LinkImageSource.TL, url: "https://www.playthroneandliberty.com/en-gb/game/credits#:~:text=Test%20Associate%20%7C%20Andrew%20Lalk"}
     ],
     media: [
+      { source: "https://www.youtube.com/embed/KFQoXwQh7j8?si=X_GiVIAfWLf3EFwH", type: MediaType.YouTube },
       { source: "/images/games/Throne & Liberty/Screenshot_1.jpg", type: MediaType.Image },
-      { source: "https://www.youtube.com/embed/KFQoXwQh7j8", type: MediaType.YouTube },
       { source: "/images/games/Throne & Liberty/Screenshot_2.jpg", type: MediaType.Image },
       { source: "/images/games/Throne & Liberty/Screenshot_3.jpg", type: MediaType.Image },
       { source: "/images/games/Throne & Liberty/Screenshot_4.jpg", type: MediaType.Image },
     ],
   },
 
-/////// Game #2
+/////// Game #3
 
  {
-    name: "Pirate Forest - Developer",
+    name: "Pirate Forest | Cinematic Environment - Developer/Audio Engineer",
     description: "A simple forest environment that I made in Unreal Engine 5.1, so I threw a pirate into it. Assets were pulled for free from the asset store. Environment design, music and audio FX were done by me.",
     genres: ["Walking Simulator" , "Pirates"],
-    platforms: [Platform.Windows],
+    platforms: [Platform.YouTube],
     engine: GameEngine.UnrealEngine,
 	    links: [
-      { source: LinkImageSource.Github, url: "null" },
+      { source: LinkImageSource.YouTube, url: "null" },
     ],
     media: [
+      { source: "https://www.youtube.com/embed/9aL7astdJdw?si=MW8oxq9yJMXrnkqv", type: MediaType.YouTube },
       { source: "/images/games/Pirate Forest/Screenshot_1.png", type: MediaType.Image },
-      { source: "https://www.youtube.com/embed/9aL7astdJdw", type: MediaType.YouTube },
       { source: "/images/games/Pirate Forest/Screenshot_2.png", type: MediaType.Image },
       { source: "/images/games/Pirate Forest/Screenshot_3.png", type: MediaType.Image },
       { source: "/images/games/Pirate Forest/Screenshot_4.png", type: MediaType.Image },
     ],
   },
 
-/////// Game #3
+/////// Game #2
 
   {
     name: "Operation: Stop Primus - Developer",
@@ -69,15 +90,15 @@ export const games: Game[] = [
       { source: LinkImageSource.ItchIo, url: "https://hamwichdev.itch.io/operation-stop-primus" }
     ],
     media: [
+      { source: "https://www.youtube.com/embed/Pl6NLr1vm7k?si=6PvjIXY3bnj4dhuV", type: MediaType.YouTube },
       { source: "/images/games/Operation Stop Primus/Screenshot_1.png", type: MediaType.Image },
-      { source: "https://www.youtube.com/embed/Pl6NLr1vm7k", type: MediaType.YouTube },
       { source: "/images/games/Operation Stop Primus/Screenshot_2.png", type: MediaType.Image },
       { source: "/images/games/Operation Stop Primus/Screenshot_3.png", type: MediaType.Image },
       { source: "/images/games/Operation Stop Primus/Screenshot_4.png", type: MediaType.Image },
     ],
   },
   
-  /////// Game #4
+  /////// Game #1
 
   {
     name: "A True Captain - Developer",
@@ -90,8 +111,8 @@ export const games: Game[] = [
       { source: LinkImageSource.ItchIo, url: "https://hamwichdev.itch.io/a-true-captain" }
     ],
     media: [
+      { source: "https://www.youtube.com/embed/36AAKBvjrPw?si=6KAZhulH-KSB34TD", type: MediaType.YouTube },
       { source: "/images/games/A True Captain/Screenshot_1.png", type: MediaType.Image },
-      { source: "https://www.youtube.com/embed/36AAKBvjrPw", type: MediaType.YouTube },
       { source: "/images/games/A True Captain/Screenshot_2.png", type: MediaType.Image },
       { source: "/images/games/A True Captain/Screenshot_3.png", type: MediaType.Image },
       { source: "/images/games/A True Captain/Screenshot_4.png", type: MediaType.Image },

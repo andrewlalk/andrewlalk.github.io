@@ -31,7 +31,7 @@ const Navbar = styled.nav`
 `;
 
 const NavbarLink = styled(Link)`
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   text-decoration: none;
   color: green;
   font-weight: bold;
@@ -61,9 +61,9 @@ const App: React.FC = () => {
         <SelfSummary />
 
         <Navbar>
-          <NavbarLink to="/">Games 🎮</NavbarLink>
-          <NavbarLink to="/about-me">About me 👨🏻‍💻</NavbarLink>
-          <NavbarLink to="/contact">Contact 💬</NavbarLink>
+          <NavbarLink to="/">| Games |</NavbarLink>
+          <NavbarLink to="/about-me">| About me |</NavbarLink>
+          <NavbarLink to="/contact">| Contact |</NavbarLink>
         </Navbar>
 
         <Routes>

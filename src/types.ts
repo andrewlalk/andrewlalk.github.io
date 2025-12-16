@@ -3,6 +3,7 @@ export enum LinkImageSource {
   ItchIo = "/images/logos/itch.io.png",
   Steam = "/images/logos/steam.png",
   TL = "/images/logos/TL.png",
+  YouTube = "/images/logos/Youtube.png",
 }
 
 export enum Platform {
@@ -14,6 +15,7 @@ export enum Platform {
   Playstation = "Playstation",
   Xbox = "Xbox",
   Steam = "Steam",
+  YouTube = "YouTube",
 }
 
 export enum GameEngine {
@@ -24,7 +26,7 @@ export enum GameEngine {
 
 export enum MediaType {
   Image = "image",
-  YouTube = "youtube",
+  YouTube = "YouTube",
 }
 
 export interface MediaItem {
@@ -42,6 +44,7 @@ export interface AboutMeData {
   links: {
     github: string;
     itchIO: string;
+    YouTube: string;
   };
 }
 
